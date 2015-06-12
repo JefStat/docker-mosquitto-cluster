@@ -14,4 +14,4 @@ ADD mosquitto.conf /etc/mosquitto/mosquitto.conf
 
 EXPOSE 1883
 
-CMD ["mosquitto", "-c /etc/mosquitto/mosquitto.conf"]
+CMD ["mosquitto", "-c", "/etc/mosquitto/mosquitto.conf"]
