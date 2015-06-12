@@ -10,7 +10,7 @@ RUN apt-get update
 RUN apt-get upgrade -y
 RUN apt-get install mosquitto -y
 RUN adduser --system --disabled-password --disabled-login mosquitto
-ADD mosquitto.conf /etc/mosquitto/mosquitto.conf
+ADD mosquitto.conf /etc/mosquitto/
 
 EXPOSE 1883
 
