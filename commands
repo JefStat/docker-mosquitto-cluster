@@ -1,0 +1,3 @@
+docker run -d --name cluster1 -p 1883:1883 djastro/mosquitto_cluster
+docker run -d --name cluster2 -p 1884:1883 djastro/mosquitto_cluster
+docker build -t djastro/mosquitto_cluster --no-cache /Volumes/TERRA/projects/mosquitto_server/
