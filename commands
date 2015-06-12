@@ -1,3 +1,7 @@
-docker run -d --name cluster1 -p 1883:1883 djastro/mosquitto_cluster
-docker run -d --name cluster2 -p 1884:1883 djastro/mosquitto_cluster
-docker build -t djastro/mosquitto_cluster --no-cache /Volumes/TERRA/projects/mosquitto_server/
+docker run -d --name cluster1 -p 1883:1883 djastro/docker-mosquitto-cluster
+docker run -d --name cluster2 -p 1884:1883 djastro/docker-mosquitto-cluster
+docker build -t djastro/docker-mosquitto-cluster --no-cache /Volumes/TERRA/projects/mosquitto_server/
+
+
+# Run a broken start command to connect to shell 
+docker run -it --entrypoint=/bin/bash djastro/docker-mosquitto-cluster -i
